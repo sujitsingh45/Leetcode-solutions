@@ -11,7 +11,9 @@ class Solution:
         prev=None
         while fast!=None and fast.next!=None: # getting access at half in the list
             fast=fast.next.next
-            slow=slow.next    
+            slow=slow.next 
+        if fast is not None:   # odd number of nodes
+            slow = slow.next       
         
         while slow!=None:  # reversing the half of the linkesd list
             new_node=slow.next
