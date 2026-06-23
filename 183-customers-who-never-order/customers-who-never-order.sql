@@ -1,8 +1,8 @@
 # Write your MySQL query statement below
-select Customers.name as Customers #taking column name as Customers 
-from Customers # from customers table
-left join Orders #left join with orders table  
-on Customers.id=Orders.customerId
-where Orders.customerId is null; #extracting the one who orders
+select A.name as Customers
+from Customers A#from customers table
+left join Orders B #left join with orders table  
+on A.id=B.customerId
+where B.customerId is null; #extracting the one who orders
  
 
