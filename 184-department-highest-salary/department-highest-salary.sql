@@ -1,4 +1,4 @@
-/* # Write your MySQL query statement below
+ # Write your MySQL query statement below
 SELECT
     d.name AS Department, #selecting required column as per need 
     e.name AS Employee,
@@ -14,8 +14,8 @@ JOIN (
     ON e.departmentId = s.departmentId
    AND e.salary = s.max_salary; #getting max salary by department
 
-    */
-select 
+    
+/*select 
 d.name as Department,# selecting required column as per needed name
 e.name as Employee,
 e.salary as Salary
@@ -26,4 +26,4 @@ where e.salary=(  #subquery
     select max(salary) as max_salary #getting max salary
     from Employee 
     where departmentid=e.departmentid #returning only one max rows
-);
+);*/
