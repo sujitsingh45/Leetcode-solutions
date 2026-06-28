@@ -10,6 +10,6 @@ JOIN (
     SELECT departmentId, MAX(salary) AS max_salary
     FROM Employee
     GROUP BY departmentId
-)m
-    ON e.departmentId = m.departmentId
-   AND e.salary = m.max_salary; #getting max salary by department
+)s
+    ON e.departmentId = s.departmentId
+   AND e.salary = s.max_salary; #getting max salary by department
