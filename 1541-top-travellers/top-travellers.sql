@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 SELECT
-    u.name,#require column
+    u.name, #require column
     COALESCE(SUM(r.distance), 0) AS travelled_distance #null converted to zero
 FROM Users u
 LEFT JOIN Rides r
