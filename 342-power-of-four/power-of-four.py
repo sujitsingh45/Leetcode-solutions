@@ -8,10 +8,10 @@ class Solution(object):
             return False        
         """
         #base case 
-        if n<=0:
-            return False
         if n==1:
             return True
+        if n<=0:
+            return False
         if n%4!=0:
             return False
         # recusrion case 
