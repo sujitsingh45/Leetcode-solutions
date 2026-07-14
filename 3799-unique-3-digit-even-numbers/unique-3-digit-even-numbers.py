@@ -14,7 +14,7 @@ class Solution(object):
                     if digits[i]==0:
                         continue
                     # unit digit must be even    
-                    if digits[j]%2!=0:
+                    if digits[k]%2!=0:
                         continue
 
                     num=digits[i]*100+digits[j]*10+digits[k]  
