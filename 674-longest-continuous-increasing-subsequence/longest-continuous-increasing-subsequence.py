@@ -9,7 +9,9 @@ class Solution:
         
         for i in range(1,len(nums)):
             if nums[i]>nums[i-1]:
-                k=k+1    
+                k=k+1
+                if k>p:
+                    p=k    
             else:
                 k=1
             p=max(p,k)    #updating maximum
