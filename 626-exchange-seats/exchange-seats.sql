@@ -1,9 +1,10 @@
-# Write your MySQL query statement below
+# write your mysql query
 SELECT
-    IF(id % 2 = 0,
-       id - 1,
-       IF(id = (SELECT COUNT(*) FROM Seat), id, id + 1)  #if the current id is odd then swap by next
-    ) AS id,
+    CASE
+        WHEN id % 2 = 0 THEN id - 1
+        WHEN id = (SELECT COUNT(*) FROM Seat) THEN id
+        ELSE id + 1
+    END AS id,
     student
 FROM Seat
 ORDER BY id;
