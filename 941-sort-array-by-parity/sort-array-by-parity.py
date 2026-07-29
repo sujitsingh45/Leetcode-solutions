@@ -15,6 +15,8 @@ class Solution:
       
 #by swapping the element and not using extra variable
         n=len(nums)
+        if n==1:
+            return nums
         start=0
         for i in range(n):    
            if nums[i]%2==0:
