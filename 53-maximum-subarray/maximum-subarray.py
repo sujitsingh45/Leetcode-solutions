@@ -3,7 +3,6 @@ class Solution:
         n=len(nums)
         if n==1:# if the size is one
             return nums[0]
-        
         curr_sum=0
         max_sum=nums[0]
         for i in range(n):
