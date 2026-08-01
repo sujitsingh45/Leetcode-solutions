@@ -1,6 +1,8 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         n=len(nums)
+        if n==1:# if the size is one
+            return nums[0]
         
         curr_sum=0
         max_sum=nums[0]
