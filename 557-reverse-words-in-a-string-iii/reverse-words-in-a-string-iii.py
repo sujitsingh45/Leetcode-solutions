@@ -1,6 +1,8 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        s=list(s)
+        words = s.split()
+        return " ".join(word[::-1] for word in words)
+    '''  s=list(s)
         left=0# at starting index
         for right in range(len(s)+1):# +1 for after last word
             if right==len(s)or s[right]==" ":
@@ -15,7 +17,8 @@ class Solution:
                 left=right+1 #update the left for next word
         return "".join(s)   
         # time complexity: O(n) 
-        # space complexity: 0(n) because of converting string to list    
+        # space complexity: 0(n) because of converting string to list '''
+      
 
                  
         
