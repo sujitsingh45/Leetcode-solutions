@@ -2,7 +2,7 @@ class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         buy_day=prices[0] #to get minimum buy day
         max_profit=0
-        for i in range(len(prices)):
+        for i in range(1,len(prices)):
             #taking best day to buy
             buy_day=min(buy_day,prices[i])
             #calculating profit
