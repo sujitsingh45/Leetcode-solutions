@@ -1,5 +1,7 @@
 class Solution(object):
     def myPow(self, x, n):
+       
+        
         #base case
         if n<0:
             return 1 / self.myPow(x,-n)
@@ -10,7 +12,7 @@ class Solution(object):
         if n%2==0: #if it's even a*a
             return a*a
         else: #if it's odd
-            return a*a*x         
+            return a*a*x        
 
         
         
